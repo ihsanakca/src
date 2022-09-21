@@ -1,0 +1,16 @@
+programınızda yazılan gereksiz kod fazlalıgından kurtarır.
+farklı tanımlamalar sayesinde esneklik saglar.
+çok biçimlilik
+Alparslan bey öğretmen, aynı zamanda öğrenci olabilir, tester olabilir
+
+Alparslan alparslan=new Tester();
+Alparslan alparslan=new Ogretmen();
+Alparslan alparslan=new Ogrenci();
+
+karmasıklıgı azaltır.
+geri okunabilirliği arttırır.
+hata ayıklamayı kolaylastırır.
+
+Bu ilkede genel hususlar üst sınıftan override edilenleri ise alt snıftan kullanılır.
+Güvenliği arttırır.
+

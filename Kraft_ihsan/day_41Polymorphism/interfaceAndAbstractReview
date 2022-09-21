@@ -1,0 +1,23 @@
+Abstraction classlar belirli bir örnek yerine bir nesnenin temel niteliklerine odaklanmak için önemsiz olanları görmezden gelme
+soyutlama abstarct class ve interfaceler sayesinde yapılıyor.
+soyut bir sınıf somutlaştırılamaz.
+soyut sınıflardaki amaç alt sınıflara yeniden kullanılabilir değişkenler ve metotlar sağlamaktır.
+asıl amaç alt sınıfları bu metotları yazmaya zorlamak.
+abstract classın bir alt sınıfına concrete denir.
+1.concrete class da implement zorunlu.
+abstraction classlar birbirlerine extend olabilirler..
+abstarct classlar abstract metotları uygulayıp uygulamamak istyeğe bağlı. uygulamazsa en alt class uzerindeki butun clasların
+abstract metotların hepsini uygulamalı.
+abstaract classlardan obje oluşturulmaz...
+abstaract classlarda metotlar abstarct ya da non abstract olabilirler. metotlar final ya da private olamaz.
+abstaract classlarda constructor olabilir.
+interfacelerde constructor olamaz.
+abstaract classlarda instance, static ve final değişkenler tanımlanabilir.
+abstarct class extends interfaceler ise implements keywordunu kullanır.
+interfaceler genellikle özellik eklemek için kullanılır.
+interfaceler sadece public access modifier kullanabilir.
+interfaceler sınıfları başka bir sınıfı genişletmezler.
+interfaceler public statik final değişkenlere sahip olabilirler.
+
+interfacelere java 8 den sonra default ve static metotlar eklenmiştir. java 9 da private metotlar eklenmiştir.
+interfaceler multipl inheritance yapılabilir. coklu kalıtımı destekler.
