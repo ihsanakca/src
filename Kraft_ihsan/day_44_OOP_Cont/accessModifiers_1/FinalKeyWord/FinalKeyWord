@@ -1,0 +1,22 @@
+final keyword is not an access modifier.
+-we can use it with variable-method-class,array.
+
+**final variables**
+to create constatn variables.
+
+if the instance variable is final;
+-we should initialize it in same statements or
+-we should initialize it in cons or
+-we should initialize it in init block. (static olmayan blok). statik blokta statik olan final degiskenlere atama olabilir.
+
+**final method**
+prevents method overriding...
+
+***final class***
+prevents inheritance...
+
+final classlar immutable olurlar. değiştirilemez classlar final keywordu ile yapılır...
+
+
+***final keyword Array and ArrayList***
+referanslar değiştirelemez ama array icerikleri değişebilir.

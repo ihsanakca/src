@@ -1,0 +1,17 @@
+Abstraction
+Abstraction class ve Interface yapıları ile abstraction sağlayabiliyoruz.
+Abstraction classdan object üretemeyiz.
+Abstraction classlar içinde abstract metotlar oluşturabiliriz.
+Abstract metotlarda implement yapamayız. metot bodyleri yok.
+ilk concrete classda implement yapılır.
+abstract classda non-abstract metot olabilir.
+abstract classda constractor olur.
+abstract classda blocks olabilir.
+abstract classda static metot olabilir.
+abstract classlar non-abstractlara extends olabilir.
+abstract classlar başka bir abstract classa extends olabilir.
+abstract metotlar final ve private olamaz.
+abstract metotlar static olamaz.
+abstract metotlar protected olur.
+abstract classlar multiple inheritance olamaz.
+abstract classa extend olan bir başka abstract class implement yapmayabilir. override yapmayabilir.
