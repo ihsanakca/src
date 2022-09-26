@@ -13,27 +13,26 @@ public class Child extends Parent {
 }
 class maiin{
     public static void main(String[] args) {
-        double fiyat1,fiyat2,fiyat3,toplamFiyat;
-        String kitap1,kitap2,kitap3;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("kitap1 in ismini ve fiyatını girin: ");
-        kitap1=sc.nextLine();
-        fiyat1=sc.nextDouble();
+        int sayi1,sayi2,sayi3;
 
-        Scanner sc1=new Scanner(System.in);
-        System.out.println("kitap2 in ismini ve fiyatını girin: ");
-        kitap2=sc1.nextLine();
-        fiyat2=sc1.nextDouble();
-
-        Scanner sc2=new Scanner(System.in);
-        System.out.println("kitap3 in ismini ve fiyatını girin: ");
-        kitap3=sc2.nextLine();
-        fiyat3=sc2.nextDouble();
+        //kod buraya-Değişkenleri burada belirleyin
 
 
-        System.out.println("kitap1 fiyatı:"+fiyat1+", Kitap2 fiyatı:"+fiyat2+", Kitap3 fiyatı:"+fiyat3);
 
-        System.out.println("Toplam Fiyat:"+(fiyat1+fiyat2+fiyat3));
+        Scanner sc = new Scanner(System.in); //buna dokunmayın
+        System.out.println("Birinci sayıyı giriniz:");
+        sayi1=sc.nextInt();
+        System.out.println("İkinci sayıyı giriniz:");
+        sayi2=sc.nextInt();
+        System.out.println("Üçüncü sayıyı giriniz:");
+        sayi3=sc.nextInt();
+        int sum=sayi1+sayi2+sayi3;
+        System.out.println("sayıların toplamı :"+sum);
+
+
+        //kod buraya
+
+
 
     }
 }
