@@ -2,7 +2,7 @@ package GenelExercise;
 
 import java.util.Arrays;
 
-public class generalTasks {
+public class generalTasks_1 {
     public static void main(String[] args) {
 
       /*  String str="merhaba java insanları";

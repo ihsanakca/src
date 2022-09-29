@@ -19,10 +19,10 @@ public class ExceptionFaktoryelOrnek {
     public static void faktoryelAlma(double a){
         int sonuc=1;
         try {
-            if (a<0){throw new ArithmeticException(" eksi sayıların faktoryeli olmaz.");
+            if (a<0){throw new ArithmeticException(" Eksi sayıların faktoryeli olmaz.");
             } else if (a==0) {sonuc=1;
 
-            } else if (!((int)a-a==0)) {throw new InputMismatchException("girdiğiniz sayı tamsayı değildir.");
+            } else if (!((int)a-a==0)) {throw new InputMismatchException("Girdiğiniz sayı tamsayı değildir.");
                 
             } else{
                 for (int i = 1; i <=a ; i++) {
