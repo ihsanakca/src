@@ -1,9 +1,6 @@
 package day_49_Collection_Cont;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ListStudy {
     public static void main(String[] args) {
@@ -59,9 +56,32 @@ public class ListStudy {
         lst.set(5,556);//listte olan değişiklik de subliste yansır.
         System.out.println("lst = " + lst);
         System.out.println("subList3_8 = " + subList3_8);
-
+        System.out.println("-------------------------------");
         //list iterator
+//lst = [100, 90, 80, 70, 555, 556, 40, 30, 10]
+        final ListIterator<Integer> listIterator = lst.listIterator();
+        System.out.println("listIterator.hasNext() = " + listIterator.hasNext());
+        //System.out.println(listIterator.next());
 
-
+        while (listIterator.hasNext()){
+            Integer next=listIterator.next();
+            System.out.println(next);
+            if(next>40){
+                listIterator.remove();
+            }
+        }
+        System.out.println("lst = " + lst);//lst = [40, 30, 10]
+        System.out.println("listIterator.hasNext() = " + listIterator.hasNext());
+        System.out.println("listIterator.hasPrevious() = " + listIterator.hasPrevious());
+      //  System.out.println("listIterator.previous() = " + listIterator.previous());
+        while (listIterator.hasPrevious()){
+             Integer previous = listIterator.previous();
+             if (previous<40){
+                // listIterator.remove();//40
+               //  listIterator.set(2022);//lst = [40, 2022, 2022]
+                 listIterator.add(333);
+             }
+        }
+        System.out.println("lst = " + lst);
     }
 }

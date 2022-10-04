@@ -43,7 +43,11 @@ public class Iterating {
         System.out.println("cll = " + cll);
         System.out.println(myItter.hasNext());//iterasyon son indexe kadar gitti. artık gidecek yer yok. false verir.
         cll.add(200);
-        System.out.println(myItter.hasNext());//şimdi true olur. 200 ekledikten sonra.
+        System.out.println(myItter.hasNext());//şimdi true olur. 200 ekledikten sonra.Bu collectionda next yapamayız artıl
+                                                // bunu yani cll'yi myItter'dan başka bir diziye atamalıyız. Orda next 
+                                                //yapabiliriz.Iterator<Integer> myItter = cll.iterator(); bu şekilde
+                                                // asingment yapabiliriz.
+
 
     }
 }

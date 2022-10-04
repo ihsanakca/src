@@ -61,7 +61,7 @@ public class CollectionStudy {
 
         //turning to array
 //        Integer[] toArray=col.toArray(new Integer[0]);
-        Integer[] toArray=col.toArray(new Integer[11]);//array = [25, 20, 50, 5, 80, 60, 70, 90, null, null, null]
+        Integer[] toArray=col.toArray(new Integer[0]);//array = [25, 20, 50, 5, 80, 60, 70, 90, null, null, null]
         System.out.println("array = " + Arrays.toString(toArray));
     }
 }
