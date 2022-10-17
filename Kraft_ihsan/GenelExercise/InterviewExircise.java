@@ -8,7 +8,7 @@ public class InterviewExircise {
         //List içerindeki polindrom kelimeleri list içerisinden silen metodu yazınız.interview question.
         //polindrom=tersten ve düzden okunuşu aynı olan kelimeler.
 
-        String str = "kol lok tot bol lob kapak tır yatay tar rat kısık";
+        String str = "kol lok tot bol lob kapak tır kayak yatay tar rat kısık";
 
         System.out.println("removeReverse(str) = " + removeReverse(str));
         System.out.println("removeReverse2(str) = " + removeReverse2(str));
@@ -30,13 +30,14 @@ public class InterviewExircise {
         List<String> strList = new ArrayList<>(Arrays.asList(strArray));
         List<String> strListReverse = new ArrayList<>(Arrays.asList(strArrayReverse));
 
-        for (int i = 0; i < strList.size(); i++) {
-            for (int j = 0; j < strListReverse.size(); j++) {
+        for (int i = 0; i < strList.size();) {
+            for (int j = 0; j < strListReverse.size();) {
                 if (strList.get(i).equals(strListReverse.get(j))) {
-                    strList.remove(i);
-                    strListReverse.remove(j);
-                }
-            }
+                    strList.remove(strList.get(i));
+                    strListReverse.remove(strListReverse.get(j));
+                    continue;
+                }j++;continue;
+            }i++;
 
         }
 
@@ -69,20 +70,12 @@ public class InterviewExircise {
         for (int i = str.length() - 1; i >= 0; i--) {
             reverse += str.charAt(i);
         }
-//        System.out.println("reverse = " + reverse);
 
         String[] strArray = str.split(" ");
-//        System.out.println("strArray = " + Arrays.toString(strArray));
-
         String[] strArrayReverse = reverse.split(" ");
-//        System.out.println("strArrayReverse = " + Arrays.toString(strArrayReverse));
 
         List<String> strList = new ArrayList<>(Arrays.asList(strArray));
-//        System.out.println("strList = " + strList);
-
         List<String> strListReverse = new ArrayList<>(Arrays.asList(strArrayReverse));
-
-//        System.out.println("strListReverse = " + strListReverse);
 
         List<String> strListReverse2=new ArrayList<>();
 
@@ -90,21 +83,18 @@ public class InterviewExircise {
 
             strListReverse2.add(((strListReverse.size()-1)-i),strListReverse.get(i));
         }
-//        System.out.println("strListReverse2 = " + strListReverse2);
 
-        for (int i = 0; i <strListReverse2.size() ; i++) {
+        for (int i = 0; i <strListReverse2.size() ; ) {
                 if(strList.get(i).equals(strListReverse2.get(i))){
-                    strList.remove(i);
-                    strListReverse2.remove(i);
+                    strList.remove(strList.get(i));
+                    strListReverse2.remove(strListReverse2.get(i));
+                    continue;
 
-            }
-//            System.out.println(strList);
-//            System.out.println(strListReverse2);
+            }i++;
         }
 
 
         return  strList;
-
     }
 }
 

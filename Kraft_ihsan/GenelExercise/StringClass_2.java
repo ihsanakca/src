@@ -134,5 +134,6 @@ public class StringClass_2 {
 //        System.out.println(s1+10);//concatenating string with 10
 //        str2=s1+str1;
 //        System.out.println(str2);
+        System.out.println("akçayır");
     }
 }

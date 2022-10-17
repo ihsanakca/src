@@ -39,7 +39,7 @@ public class ExampleTryCatch_2 {
 
     }
     // array tanımlayalım içerisinde en buyuk sayının indeks numarasını getiren metodu yazınız
-    // en buyuk sayıdan iki veya daha fazla var ise bir new exceptin throw edin.
+    // en buyuk sayıdan iki veya daha fazla var ise bir new exception throw edin.
 
     public static int maxNumberIndex(int array[]) throws Exception {
 
