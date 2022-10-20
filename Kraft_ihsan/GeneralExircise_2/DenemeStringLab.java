@@ -126,6 +126,38 @@ return start.equalsIgnoreCase(end);
         }
         return start.equalsIgnoreCase(end);
     }
+
+    public static String adSoyad(String adSoyad){
+        String adSoyad1=adSoyad.trim();
+        String[] sArr = adSoyad1.split(" ");
+        return "Soy isminiz...("+sArr[sArr.length-1]+")..dır.";
+    }
+    public static String adSoyad2(String adSoyad){
+        String adSoyad1=adSoyad.trim();
+       return "Soy isminiz...("+adSoyad1.substring(adSoyad1.lastIndexOf(" ")+1)+")..dır.";
+    }
+    public static String adSoyad3(String adSoyad){
+        adSoyad=adSoyad.trim();
+        String result="";
+        for (int i = adSoyad.length()-1; i >=0 ; i--) {
+            if(adSoyad.charAt(i)==' '){
+               result="Soy isminiz...("+adSoyad.substring(i+1)+")..dır.";
+                break;
+            }
+        }return result;
+    }
+
+    public static String adSoyad4(String adSoyad){
+       String adSoyad1=adSoyad.trim();
+       int count=0;
+        for (int i = 0; i <adSoyad1.length() ; i++) {
+            if(adSoyad1.charAt(i)==' '){
+                count=i;
+            }
+
+        }
+       return adSoyad1.substring(count+1);
+    }
     public static void main(String[] args) {
 
 //      kesEkle();
@@ -141,17 +173,22 @@ return start.equalsIgnoreCase(end);
 //        System.out.println(firstLastTwo2("kafkA"));
 //        System.out.println(firstLastTwo2("kafkA"));
 //        System.out.println(firstLastTwo2("kafkA"));
-        System.out.println(adSoyad("  İhsan Umut Akçair Yılmaz   "));
-        System.out.println(adSoyad2("  İhsan Umut Yılmaz   "));
+//        System.out.println(adSoyad("  İhsan Umut Akçair Yılmaz   "));
+//        System.out.println(adSoyad2("  İhsan Umut Yılmaz   "));
+//        System.out.println(adSoyad3("İhsan Umut Yılmaz"));
+//        System.out.println("Soy isminiz...("+adSoyad4("  İhsan Umut Güler Azalmaz   ")+")..dır.");
+//        System.out.println(firstLastTwo(adSoyad4("  İhsan Umut Güler Azalmaz   ")));
+        System.out.println(omitRepeatingLetter("Hasan bugün bize geldi."));
 
     }
-    public static String adSoyad(String adSoyad){
-        String adSoyad1=adSoyad.trim();
-        String[] sArr = adSoyad1.split(" ");
-        return "Soy isminiz...("+sArr[sArr.length-1]+")..dır";
-    }
-    public static String adSoyad2(String adSoyad){
-        String adSoyad1=adSoyad.trim();
-       return "Soy isminiz...("+adSoyad1.substring(adSoyad1.lastIndexOf(" ")+1)+")..dır";
+    public static String omitRepeatingLetter(String str){
+        String result="";
+        while (!str.isEmpty()){
+            result+=str.substring(0,1);
+            str=str.replace(str.substring(0,1),"");
+
+        }
+
+        return result;
     }
 }
