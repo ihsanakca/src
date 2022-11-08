@@ -1,5 +1,5 @@
 package day_47_ExceptionCont;
-import javafx.scene.chart.ScatterChart;
+//import javafx.scene.chart.ScatterChart;
 
 import java.util.Arrays;
 import java.util.Scanner;
