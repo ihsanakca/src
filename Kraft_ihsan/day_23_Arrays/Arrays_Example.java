@@ -1,21 +1,29 @@
 package day_23_Arrays;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Arrays_Example {
     public static void main(String[] args) {
 
-        String [] day=new String[7];
-        day[0]="Pazartesi";
-        day[1]="Salı";
-        day[2]="Çarşamba";
-        day[3]="Perşembe";
-        day[4]="Cuma";
-        day[5]="Cumartesi";
-        day[6]="Pazar";
+        Random random = new Random();
 
-        for (int i = 0; i < day.length; i++) {
-            if (day[i].equalsIgnoreCase("cuma")){
-                System.out.println(true);
+        int countÇift = 0;
+        int countTek = 0;
+        int[] array = new int[20];
+        for (int i = 0; i < 20; i++) {
+            array[i] = random.nextInt(100);
+        }
+        for (int i = 0; i < 20; i++) {
+            if (array[i] % 2 == 0) {
+                countÇift++;
+            }else {
+                countTek++;
             }
         }
+        System.out.println("Arrays.toString(array) = " + Arrays.toString(array));
+        System.out.println("array[17] = " + array[17]);
+        System.out.println(("Tek sayı sayısı =" + countTek + " ve çift sayı sayısı =" + countÇift));
+        System.out.println(array.length);
     }
 }

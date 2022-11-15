@@ -2,7 +2,7 @@ package Day_25;
 
 import java.util.*;
 
-public class arraysExample {
+public class ArraysExample {
     public static void main(String[] args) {
 
 
@@ -26,7 +26,8 @@ public class arraysExample {
        // System.out.println((arithmetic(sayılar)));
        // System.out.println(Arrays.toString(fillWithSmallestElement(sayılar)));
         //System.out.println(Arrays.toString(fillWithSmallestElement2(sayılar)));
-        System.out.println(Arrays.toString(integerToArrays(37)));
+//        System.out.println(Arrays.toString(integerToArrays(37)));
+
 
 
     }

@@ -9,7 +9,7 @@ import java.util.List;
 public class ReverseExample {
     public static void main(String[] args) {
 
-        String str="oto umut ada ile beraber ata bindi";
+        String str="oto adanada ey ye utu ütü umut ada ile beraber ata bindi ooo omo";
         String strReverse="";
         for (int i =  str.length()-1; i >=0; i--) {
             strReverse+=str.charAt(i);
