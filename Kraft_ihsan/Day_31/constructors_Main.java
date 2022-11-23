@@ -16,5 +16,12 @@ public class constructors_Main {
 
         okul_4.controlKapasite();
         okul_3.controlKapasite();
+
+        /* Flower flower=new Flower("sarı",25,true);
+
+        System.out.println("flower.boy = " + flower.boy);
+        System.out.println("flower.renk = " + flower.renk);
+        System.out.println("flower.diken = " + flower.diken);*/
+
     }
 }

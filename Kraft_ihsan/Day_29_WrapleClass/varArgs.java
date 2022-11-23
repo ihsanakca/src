@@ -6,8 +6,9 @@ public class varArgs {
         sum(5,10,15);
         sum(7,10,15,23,36);
         sum(2,36,36,32,333,25,21,25,26,3,32,3666);
-        System.out.println(concat1("ja", "va"));
-        System.out.println(concat1("ja", "va", " ", "insanları"));
+//        System.out.println(concat1("ja", "va"));
+//        System.out.println(concat1("ja", "va", " ", "insanları"));
+//        System.out.println(concat1("ders ", "cok ", "sıkıcı"));
         System.out.println(concat1("ders ", "cok ", "sıkıcı"));
 
     }
@@ -28,6 +29,7 @@ public class varArgs {
             empty+=strs[i];
 
         }
+        System.out.println(empty);
         return empty;
     }
 }
