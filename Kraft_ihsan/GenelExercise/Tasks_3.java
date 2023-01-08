@@ -6,7 +6,7 @@ public class Tasks_3 {
     public static void main(String[] args) throws Exception {
 
 
-        int[] arr = {11, 8, 333, 221, 7, 3};
+        int[] arr = {11, 8, 333, 221, 7, 33};
         System.out.println(maxNumberIndex(arr));
 
     }

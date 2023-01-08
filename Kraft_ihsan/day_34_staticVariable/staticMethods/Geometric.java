@@ -16,7 +16,9 @@ public class Geometric {
         System.out.println("geometrik şeklin kenar sayısı "+counterSide);
     }
 }class main2{
+
     public static void main(String[] args) {
+
         //Geometric.setPerimeter(2,3);
         Geometric.setPerimeter(generateSide(),generateSide(),generateSide(),generateSide());
 

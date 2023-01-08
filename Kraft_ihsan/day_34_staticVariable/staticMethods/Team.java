@@ -35,5 +35,11 @@ class main{
         member2.getInfo();
         member3.getInfo();
         member4.getInfo();
+
+        Team.team=2;
+        member1.getInfo();
+        member2.getInfo();
+        member3.getInfo();
+        member4.getInfo();
     }
 }

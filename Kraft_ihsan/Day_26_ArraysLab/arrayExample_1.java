@@ -8,13 +8,15 @@ public class arrayExample_1 {
         int[] sayilar = {12, 5, 36, 6, 33, 62, 30, 21};
         int[] sayilar2 = {124, -5, -36, 666, 933, 562, -30, -21};
 
+        System.out.println(Arrays.binarySearch(sayilar2, 1));
+
         //System.out.println(toplam(sayilar));
         // System.out.println(toplamCift(sayilar));
         // System.out.println(toplamUc(sayilar));
         //System.out.println(enBuyukEnKucukFark(sayilar));
         // System.out.println(Arrays.toString(enKucukTumIndeks(sayilar)));
         //System.out.println(Arrays.toString(araSayilariAta(6, 11)));
-        System.out.println(Arrays.toString(arrayBirlestir(sayilar, sayilar2)));
+        //System.out.println(Arrays.toString(arrayBirlestir(sayilar, sayilar2)));
 
     }
 

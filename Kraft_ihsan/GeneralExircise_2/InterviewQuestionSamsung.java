@@ -25,5 +25,6 @@ public class InterviewQuestionSamsung {
         }
 
         mapStr.forEach((k, v) -> System.out.println("samsung,'" + v + "'," + k));
+       // mapStr.forEach(((k,v)-> System.out.println(k+" "+v)));
     }
 }
