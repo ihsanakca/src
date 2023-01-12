@@ -6,11 +6,11 @@ public class ÖzYineleyenMetod {
     public static void main(String[] args) {
 //        geriSayım(14);
 //        geriSayım2(15);
-        String str = "Sağlık, sadece hastalık ve sakatlık durumunun olmayışı değil kişinin";
-      // reverseWord(str);
-     // reverseWord2(str);
+//        String str = "Sağlık, sadece hastalık ve sakatlık durumunun olmayışı değil kişinin";
+        // reverseWord(str);
+        // reverseWord2(str);
 
-      //reverseString(str);
+        //reverseString(str);
 
 
 //        System.out.println(sumToX(25));
@@ -18,13 +18,16 @@ public class ÖzYineleyenMetod {
 //        System.out.println(sumToX3(25));
 
         //printStarTriangle(6);
-        int[] array1 = {1, 2, 3};
-        int[] array2 = {4, 5, 6};
-        int[] mergedArray = mergeArrays(array1, array2);
+//        int[] array1 = {1, 2, 3};
+//        int[] array2 = {4, 5, 6};
+//        int[] mergedArray = mergeArrays(array1, array2);
+//
+//        System.out.println(Arrays.toString(mergedArray));
+//        geriSayım(15);
 
-        System.out.println(Arrays.toString(mergedArray));
+//        reverseWord("kale");
 
-
+        geriSayim(10);
 
     }
 
@@ -55,9 +58,10 @@ public class ÖzYineleyenMetod {
         System.out.print(control);
 
     }
+
     public static void reverseWord2(String str) {
         System.out.print(str.substring(str.length() - 1));
-        str = str.substring(0,str.length()-1);
+        str = str.substring(0, str.length() - 1);
         if (str.length() > 0) {
             reverseWord(str);
         }
@@ -73,7 +77,7 @@ public class ÖzYineleyenMetod {
     public static int sumToX2(int x) {
         int sum = 0;
         if (x == 1) return 1;
-        sum += sumToX2(x-1 ) + x;
+        sum += sumToX2(x - 1) + x;
         return sum;
     }
 
@@ -85,13 +89,14 @@ public class ÖzYineleyenMetod {
         return sum;
     }
 
-    public static void reverseString(String str){
+    public static void reverseString(String str) {
         System.out.print(str.substring(str.length() - 1));
-        str=str.substring(0,str.length()-1);
-        if (str.length()>0){
+        str = str.substring(0, str.length() - 1);
+        if (str.length() > 0) {
             reverseString(str);
         }
     }
+
     public static void printStarTriangle(int rows) {
         for (int i = 1; i <= rows; i++) {
             for (int j = 1; j <= i; j++) {
@@ -100,6 +105,7 @@ public class ÖzYineleyenMetod {
             System.out.println();
         }
     }
+
     public static int[] mergeArrays(int[] array1, int[] array2) {
         int length1 = array1.length;
         int length2 = array2.length;
@@ -115,10 +121,15 @@ public class ÖzYineleyenMetod {
 
         return mergedArray;
     }
-
-
-
-
+    public static void geriSayim(int n){
+        if(n>0){
+            System.out.println(n);
+            n--;
+            geriSayim(n);
+        }else{
+            System.out.println("Bitti!!");
+        }
+    }
 
 
 }

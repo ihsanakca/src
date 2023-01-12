@@ -13,6 +13,13 @@ public class ArraysLab {
         array[4] = 50;
         int count = 0;
 
+        int[] clone = array.clone();
+
+        int [][] dimArr=new int[3][2];
+        dimArr[0][0]=2;
+        System.out.println("Arrays.deepToString(dimArr) = " + Arrays.deepToString(dimArr));
+
+
         for (int i : array) {
 //            System.out.println(i);
             array[count] = i + 23;
@@ -62,8 +69,9 @@ public class ArraysLab {
 //        System.out.println(Arrays.toString(combineArrays2(iArray, intArr)));
 
 //        System.out.println(sumOfArr(intArr));
-        int[] intArr = {2, 3,5};
+        int[] intArr = {2, 3,5,6};
         int[] intArr2 = {2, 3,5,36,3,5,0,-5};
+       // System.out.println(Arrays.toString(combineArr(intArr, intArr2)));
 
 
 //        System.out.println(diffMaxAndMin(intArr));
@@ -72,7 +80,7 @@ public class ArraysLab {
 
 //        System.out.println(Arrays.toString(combineArr(intArr, intArr2)));
 
-        System.out.println(arrControl(intArr, intArr2));
+       // System.out.println(arrControl(intArr, intArr2));
     }
 
     public static boolean arrayLenght(int[] iArr) {
@@ -113,8 +121,9 @@ public class ArraysLab {
         for (int i = 0; i < arr1.length; i++) {
             resultArr[i] = arr1[i];
         }
-        for (int i = arr1.length; i < resultArr.length; i++) {
+        for (int i = arr1.length,j=0; i < resultArr.length; i++,j++) {
             resultArr[i] = arr2[i - arr1.length];
+           // resultArr[i] = arr2[j];
 
         }
         return resultArr;
