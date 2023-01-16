@@ -6,7 +6,7 @@ import java.util.List;
 
 public class OrtakCalisma {
     public static void main(String[] args) {
-        String[] arr = {"bc6ad", "Pune", "623", "Mumbai", "10" };
+        String[] arr = {"bc6ad", "Pune", "623", "Mumbai", "10"};
         //letterOrDigit(arr);
 
         List<String> ls = new ArrayList<>(Arrays.asList(arr));
@@ -29,10 +29,10 @@ public class OrtakCalisma {
 //            System.out.println("strings["+i+"] = " + strings[i]);
 //        }
 
-        String [] strings1=new String[ls.size()];
+        String[] strings1 = new String[ls.size()];
 
         for (int i = 0; i < ls.size(); i++) {
-            strings1[i]=ls.get(i);
+            strings1[i] = ls.get(i);
         }
         System.out.println("Arrays.toString(strings1) = " + Arrays.toString(strings1));
 
@@ -77,12 +77,9 @@ public class OrtakCalisma {
             if (count == arr[i].length()) {
                 digit++;
             }
-
         }
         System.out.println("digit = " + digit);
         System.out.println("letter = " + letter);
-
-
     }
 
     public static void digitAndLetterArr(String[] arr) {
@@ -112,8 +109,8 @@ public class OrtakCalisma {
                 }
             }
         }
-
-
     }
+
+
 
 }

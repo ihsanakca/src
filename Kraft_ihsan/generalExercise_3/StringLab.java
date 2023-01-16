@@ -8,7 +8,7 @@ import java.util.*;
 public class StringLab {
     public static void main(String[] args) {
 
-       System.out.println(combinationWord("kapanak"));
+       System.out.println(combinationWord("kanakan"));
 //        System.out.println(içİçeMetot("ihsan"));
 
 

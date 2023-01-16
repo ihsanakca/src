@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class JavaInterview {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(rotateArray(9, 2)));
+        System.out.println(Arrays.toString(rotateArray(9, 1)));
 
     }
     //Problem: Rotate an array of n elements to the right by k steps. For example, with
