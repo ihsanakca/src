@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Ocak_16_Ort_Calisma {
     public static void main(String[] args) {
-        String str="123adf234hk15k3l";
+        String str="123adf234hk15k3l"; //k15k3l123adf234h
 //        seperate(str);
 //        System.out.println(seperateDigitLeter(str));
 
@@ -16,7 +16,9 @@ public class Ocak_16_Ort_Calisma {
 
 //        System.out.println("reverseStr2(str) = " + reverseStr2(str));
 
-        System.out.println("countOfLetter(\"karabacak\") = " + countOfLetter("karabacak Ali"));
+//        System.out.println("countOfLetter(\"karabacak\") = " + countOfLetter("karabacak Ali"));
+
+        System.out.println("cutAndAdd(\"salatalık\",3) = " + cutAndAdd("yar", -10));
 
     }
     // 123adf234hk15k3l  -> 123 adf 234 hk 15 k 3 l
@@ -112,5 +114,10 @@ public class Ocak_16_Ort_Calisma {
         }
 
         return resultList;
+    }
+    // karakutu, 4 -> kutukara
+    public static String cutAndAdd(String str, int n){
+        if (n>str.length()||n<0)return str;
+        return str.substring(str.length()-n).concat(str.substring(0,str.length()-n));
     }
 }

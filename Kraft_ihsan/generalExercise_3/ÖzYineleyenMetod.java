@@ -27,7 +27,9 @@ public class ÖzYineleyenMetod {
 
 //        reverseWord("kale");
 
-        geriSayim(10);
+        //geriSayim(10);
+
+        ileriSayim(0);
 
     }
 
@@ -121,15 +123,24 @@ public class ÖzYineleyenMetod {
 
         return mergedArray;
     }
-    public static void geriSayim(int n){
-        if(n>0){
+
+    public static void geriSayim(int n) {
+        if (n > 0) {
             System.out.println(n);
             n--;
             geriSayim(n);
-        }else{
+        } else {
             System.out.println("Bitti!!");
         }
     }
 
-
+    public static void ileriSayim(int n) {
+        if (n<=100){
+        System.out.print(n + " ");
+        n++;
+        ileriSayim(n);
+    }else{
+            System.out.println("done!!");
+        }
+    }
 }
