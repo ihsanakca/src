@@ -1,14 +1,18 @@
 package extra2;
 
 public class Araba {
+    public static String factory;
     String color;
     String brand;
-    Araba(String color,String brand){
+    int hp;
+    Araba(String color,String brand,int hp){
         this.color=color;
         this.brand=brand;
+        this.hp=hp;
     }
-    Araba(Araba ib){
-        this.color = ib.color;
-        this.brand = ib.brand;
+    Araba(Araba objOfAraba){
+        this.color = objOfAraba.color;
+        this.brand = objOfAraba.brand;
     }
 }
+

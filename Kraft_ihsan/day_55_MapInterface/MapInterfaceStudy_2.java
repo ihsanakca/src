@@ -66,7 +66,18 @@ public class MapInterfaceStudy_2 {
         //yeni konu
         System.out.println("-------------------------------");
 
-        Set<Map.Entry<String, Integer>> entries = ageMap.entrySet();
+        Map<String,Integer> ageMap2=new HashMap<>();
+
+        ageMap2.put("Mehmet",25);
+        ageMap2.put("Hatice",24);
+        ageMap2.put("Ayşe",22);
+        ageMap2.put("Metin",50);
+        ageMap2.put("Osman",37);
+        ageMap2.put("Zeynep",24);
+        ageMap2.put("Ahmet",24);
+        ageMap2.put("Ahmet",25);
+
+        Set<Map.Entry<String, Integer>> entries = ageMap2.entrySet();
 
         for(Map.Entry<String, Integer> eachEntry:entries){
             System.out.println("eachEntry.getKey() = " + eachEntry.getKey()
@@ -77,7 +88,7 @@ public class MapInterfaceStudy_2 {
             }
 
         }
-        System.out.println("ageMap = " + ageMap);
+        System.out.println("ageMap2 = " + ageMap2);
     }
     
 }
