@@ -10,5 +10,6 @@ public class PencereAcma {
         f.setLocation(300, 200);
         f.getContentPane().add(BorderLayout.CENTER, new JTextArea(30, 70));
         f.setVisible(true);
+
     }
 }
